@@ -15,8 +15,8 @@ function App() {
     <Home/>
     <About/>
     <Project/>
-    <FAQ/>
     <ProjectList/>
+    <FAQ/>
   <FAQSection/>
   </div>
   );

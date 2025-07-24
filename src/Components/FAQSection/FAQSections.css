@@ -1,12 +1,13 @@
-.faq__section-container{
-  padding: 5rem;
+/* === Asosiy konteyner === */
+.faq-section {
+  padding-bottom: 0.5rem;
   background-color: #f9fbfd;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
-
+/* === FAQ item === */
 .faq-item {
   background-color: white;
   border-radius: 8px;
@@ -34,4 +35,46 @@
   font-size: 14px;
   margin-top: 8px;
   color: #4b5563;
+}
+
+/* === Responsive === */
+@media (max-width: 1024px) {
+  .faq__section-container {
+    padding: 4rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq__section-container {
+    padding: 3rem 1.5rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+
+  .faq-answer {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq__section-container {
+    padding: 2rem 1rem;
+  }
+
+  .faq-item {
+    padding: 12px 16px;
+  }
+
+  .faq-question {
+    font-size: 0.95rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+  }
 }
