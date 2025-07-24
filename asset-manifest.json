@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/numonofcv/numonof.uz-withReact-js/static/css/main.0fc080cb.css",
-    "main.js": "/numonofcv/numonof.uz-withReact-js/static/js/main.82b2f6b3.js",
+    "main.css": "/numonofcv/numonof.uz-withReact-js/static/css/main.37387441.css",
+    "main.js": "/numonofcv/numonof.uz-withReact-js/static/js/main.567fca81.js",
     "static/media/hero.png": "/numonofcv/numonof.uz-withReact-js/static/media/hero.2646f76a9fa7f395eff4.png",
     "static/media/indicorp.png": "/numonofcv/numonof.uz-withReact-js/static/media/indicorp.5799d96cb36bc53d0402.png",
     "static/media/artificial.png": "/numonofcv/numonof.uz-withReact-js/static/media/artificial.34d8e9dcb5efd4c69ac0.png",
@@ -16,11 +16,11 @@
     "static/media/twitter_login.png": "/numonofcv/numonof.uz-withReact-js/static/media/twitter_login.b2cf24f2c773433ab4be.png",
     "static/media/four-card-future.jpg": "/numonofcv/numonof.uz-withReact-js/static/media/four-card-future.2a7323453ef939798cf3.jpg",
     "index.html": "/numonofcv/numonof.uz-withReact-js/index.html",
-    "main.0fc080cb.css.map": "/numonofcv/numonof.uz-withReact-js/static/css/main.0fc080cb.css.map",
-    "main.82b2f6b3.js.map": "/numonofcv/numonof.uz-withReact-js/static/js/main.82b2f6b3.js.map"
+    "main.37387441.css.map": "/numonofcv/numonof.uz-withReact-js/static/css/main.37387441.css.map",
+    "main.567fca81.js.map": "/numonofcv/numonof.uz-withReact-js/static/js/main.567fca81.js.map"
   },
   "entrypoints": [
-    "static/css/main.0fc080cb.css",
-    "static/js/main.82b2f6b3.js"
+    "static/css/main.37387441.css",
+    "static/js/main.567fca81.js"
   ]
 }
