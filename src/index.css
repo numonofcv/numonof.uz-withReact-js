@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+section{
+   display: flex;
+  align-items: center;
+  padding: 50px;
+}
+.container{
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+button{
+ background-color: #0F172A;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover{
+    color: #3498db;
+}
+.title{
+ font-size: 2.8em;
+  color: #0F172A;
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+}
+.description{
+   font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+/* Asosiy holat (desktop) */
+/* Seni oldingi CSS ni shu yerga qo‘yamiz */
+
+/* Kichik ekranlar uchun (tablet, mobil) */
+@media (max-width: 768px) {
+  section{
+     padding: 25px; 
+  }
+  
+.container{
+  padding: 0;
+  margin: 0 auto;
+}
+.title{
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+}
+
+/* Juda kichik ekranlar uchun (mobil) */
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+}

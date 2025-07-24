@@ -1,0 +1,149 @@
+/* === Project Section === */
+
+.project {
+    /* min-height: 600px; */
+  background-color: #f9f9f9;
+}
+.project__container{
+      width: 100%;
+  padding: 2rem 5rem; /* Agar fon bo‘sh bo‘lsa, oq fon */
+  border-radius: 8px; /* Biroz yumaloq burchak */
+  box-sizing: border-box
+}
+/* === Project List === */
+
+.project__list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Project Card === */
+
+.project__card {
+    width: 300px;
+    height: auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all  0.3s ease;
+}
+
+.project__card-image-wrapper {
+  width: 100%;
+  height: 250px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: block;
+  border-radius: 10px;
+  transition: all 0.3 ease;
+  
+}
+.project__image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.project__card:hover {
+  transform: translateY(-5px);
+}
+.project__card:hover .project__image {
+transform: scale(1.1);
+}
+
+.project__details {
+  padding: 20px;
+  text-align: center;
+}
+
+.project__card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #222;
+}
+.project__filters {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project__filter-btn {
+  padding: 8px 16px;
+  border: 1px solid #0f172a;
+  color: #0F172A;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project__filter-btn.active,
+.project__filter-btn:hover {
+  background-color: #0F172A;
+  color: #fff;
+}
+.project__empty {
+  width: 60%;
+  margin: 5rem auto;
+  font-size: 5rem;
+  text-align: center;
+  color: #0F172A;
+  opacity: 0.2;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+/* === Responsive tweaks === */
+
+@media (max-width: 768px) {
+  .project__title {
+    font-size: 1.8rem;
+  }
+  
+.project__list {
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* === Project Card === */
+
+.project__card {
+    width: 300px;
+    height: auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+
+  .project__card-title {
+    font-size: 1.3rem;
+  }
+    .project__empty {
+    font-size: 3rem;
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .project__empty {
+    font-size: 2rem;
+    width: 95%;
+  }
+}

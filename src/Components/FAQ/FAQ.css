@@ -1,0 +1,61 @@
+.accordion-container {
+width: 100%;  
+  padding: 5rem;
+  background-color: #fff; /* Agar fon bo‘sh bo‘lsa, oq fon */
+  border-radius: 8px; /* Biroz yumaloq burchak */
+  box-sizing: border-box
+}
+
+.accordion-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.accordion-button {
+  width: 60%;
+  padding: 15px;
+  background: #1e293b;
+  color: white;
+  font-size: 1.3rem;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-arrow {
+  margin-left: 10px;
+}
+
+.accordion-answer-box {
+  width: 35%;
+  background: #e5e7eb;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.accordion-answer {
+  color: #111827;
+  font-size: 15px;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .accordion-item-wrapper {
+    flex-direction: column;
+  }
+
+  .accordion-button,
+  .accordion-answer-box {
+    width: 100%;
+  }
+
+  .accordion-button {
+    margin-bottom: 10px;
+  }
+}

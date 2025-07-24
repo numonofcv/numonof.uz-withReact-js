@@ -1,0 +1,38 @@
+.about__container {
+  width: 100%;
+  padding: 5rem;
+  background-color: #fff; /* Agar fon bo‘sh bo‘lsa, oq fon */
+  border-radius: 8px; /* Biroz yumaloq burchak */
+  box-sizing: border-box;
+}
+/* Asosiy holat (desktop) */
+/* Seni oldingi CSS ni shu yerga qo‘yamiz */
+
+/* Kichik ekranlar uchun (tablet, mobil) */
+@media (max-width: 768px) {
+  .about {
+    padding: 20px;
+    min-height: auto; /* Vertikal markazlashni olib tashlash mumkin */
+    display: block; /* Flexdan chiqamiz */
+  }
+
+  .about__container {
+    padding: 2rem;
+    max-width: 100%;
+    box-shadow: none; /* Kichik ekranlarda oddiyroq ko‘rinish */
+    border-radius: 0;
+  }
+
+}
+
+/* Juda kichik ekranlar uchun (mobil) */
+@media (max-width: 480px) {
+  .about {
+    padding: 15px 10px;
+  }
+
+  .about__container {
+    padding: 1rem;
+  }
+
+}

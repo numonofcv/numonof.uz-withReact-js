@@ -1,0 +1,111 @@
+/* === Project List === */
+.multi-section {
+  background-color: #f9f9f9;
+}
+.multi-section__container{
+  padding: 5rem;
+  box-sizing: border-box;
+}
+.multi-section__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  
+  justify-content: center;
+}
+
+.multi-section__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #fff;
+  padding: 3rem 1rem;
+  margin: 2rem 0;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.multi-section__item:nth-child(2n) {
+  flex-flow: row-reverse;
+}
+
+.multi-section__item:hover {
+  transform: translateY(-5px);
+}
+
+.multi-section__img-wrapper {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+
+}
+
+.multi-section__image {
+  width: 460px;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.05);
+
+}
+
+.multi-section__details {
+  width: 50%;
+  padding: 20px;
+  text-align: left;
+}
+
+.multi-section__item-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #0F172A;
+}
+
+.multi-section__description {
+  width: 70%;
+}
+
+.multi-section__button {
+  padding: 10px 20px;
+  background-color: #0F172A;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.multi-section__button:hover {
+  background-color: #333;
+}
+
+/* === Responsive tweaks === */
+@media (max-width: 992px) {
+  .multi-section__item {
+    width: 45%;
+  }
+
+  .multi-section__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .multi-section__item {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .multi-section__title {
+    font-size: 1.8rem;
+  }
+
+  .multi-section__item-title {
+    font-size: 1.3rem;
+  }
+
+  .multi-section__description {
+    font-size: 0.95rem;
+  }
+}
