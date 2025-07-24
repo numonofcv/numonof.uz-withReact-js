@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/numonofcv/numonof.uz-withReact-js/static/css/main.0fc080cb.css",
+    "main.js": "/numonofcv/numonof.uz-withReact-js/static/js/main.82b2f6b3.js",
+    "static/media/hero.png": "/numonofcv/numonof.uz-withReact-js/static/media/hero.2646f76a9fa7f395eff4.png",
+    "static/media/indicorp.png": "/numonofcv/numonof.uz-withReact-js/static/media/indicorp.5799d96cb36bc53d0402.png",
+    "static/media/artificial.png": "/numonofcv/numonof.uz-withReact-js/static/media/artificial.34d8e9dcb5efd4c69ac0.png",
+    "static/media/ProductList.jpg": "/numonofcv/numonof.uz-withReact-js/static/media/ProductList.f69a2aefe582d06d4e59.jpg",
+    "static/media/recipeLP.jpg": "/numonofcv/numonof.uz-withReact-js/static/media/recipeLP.d731912b5af42bc53460.jpg",
+    "static/media/Screenshot_1.png": "/numonofcv/numonof.uz-withReact-js/static/media/Screenshot_1.b7b0f169b6c0cb0792c0.png",
+    "static/media/Trafalgar.jpg": "/numonofcv/numonof.uz-withReact-js/static/media/Trafalgar.eb458cf8e6cef4963a89.jpg",
+    "static/media/current-box.png": "/numonofcv/numonof.uz-withReact-js/static/media/current-box.89b4e99150aae334863b.png",
+    "static/media/mirage.jpg": "/numonofcv/numonof.uz-withReact-js/static/media/mirage.57b992821bb290b69a15.jpg",
+    "static/media/crudTodos.png": "/numonofcv/numonof.uz-withReact-js/static/media/crudTodos.e0637073c7109d2a6601.png",
+    "static/media/product-cart.jpg": "/numonofcv/numonof.uz-withReact-js/static/media/product-cart.2a6aa9763eaa1d66c967.jpg",
+    "static/media/twitter_login.png": "/numonofcv/numonof.uz-withReact-js/static/media/twitter_login.b2cf24f2c773433ab4be.png",
+    "static/media/four-card-future.jpg": "/numonofcv/numonof.uz-withReact-js/static/media/four-card-future.2a7323453ef939798cf3.jpg",
+    "index.html": "/numonofcv/numonof.uz-withReact-js/index.html",
+    "main.0fc080cb.css.map": "/numonofcv/numonof.uz-withReact-js/static/css/main.0fc080cb.css.map",
+    "main.82b2f6b3.js.map": "/numonofcv/numonof.uz-withReact-js/static/js/main.82b2f6b3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fc080cb.css",
+    "static/js/main.82b2f6b3.js"
+  ]
+}
