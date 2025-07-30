@@ -15,7 +15,7 @@ import mirage from './mirage.jpg';
 import trafalgar from './Trafalgar.jpg';
 import twitterForm from './twitter_login.png';
 import crudTodo from './crudTodos.png';
-import slider from './Screenshot_1.png'
+import slider from './Screenshot_1.png';
 
 // EXPORT ALL
 export {
@@ -24,5 +24,5 @@ export {
   productList,
   fourCartFuture,
   productCart,
-  artifical,currentBox,indicorp,mirage,trafalgar,twitterForm,crudTodo,slider
+  artifical,currentBox,indicorp,mirage,trafalgar,twitterForm,crudTodo,slider, 
 };

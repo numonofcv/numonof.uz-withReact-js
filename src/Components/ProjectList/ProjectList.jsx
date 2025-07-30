@@ -29,7 +29,7 @@ export default function ProjectList() {
               <p className="multi-section__description">
                 A fully responsive multi-page website built with HTML, CSS, and JavaScript
               </p>
-              <button className="multi-section__button">View project</button>
+              <button className="button multi-section__button">View project</button>
             </div>
           </li>
 
@@ -47,7 +47,7 @@ export default function ProjectList() {
               <p className="multi-section__description">
                 A todo list application created using React, TypeScript, and Sass
               </p>
-              <button className="multi-section__button">View project</button>
+              <button className="button multi-section__button">View project</button>
             </div>
           </li>
 
@@ -65,7 +65,7 @@ export default function ProjectList() {
               <p className="multi-section__description">
                 A corporate website built with responsive design, optimized for performance
               </p>
-              <button className="multi-section__button">View project</button>
+              <button className=" button multi-section__button">View project</button>
             </div>
           </li>
 
@@ -83,7 +83,7 @@ export default function ProjectList() {
               <p className="multi-section__description">
                 An Image slider component built with HTML, CSS, and JavaScript
               </p>
-              <button className="multi-section__button">View project</button>
+              <button className="button multi-section__button">View project</button>
             </div>
           </li>
 

@@ -54,7 +54,7 @@ return (
         {/* Category Filter Buttons */}
         <div className="project__filters">
             {categories.map((category) => (
-            <button key={category} className={`project__filter-btn ${selectedCategory===category ? 'active' : '' }`}
+            <button key={category} className={`button project__filter-btn ${selectedCategory===category ? 'active' : '' }`}
                 onClick={()=> setSelectedCategory(category)}
                 >
                 {category}
@@ -72,7 +72,7 @@ return (
                     </div>
                     <div className="project__details">
                         <h3 className="project__card-title">{project.title}</h3>
-                        <button className="project__button">View Project</button>
+                        <button className="button project__button">View Project</button>
                     </div>
                 </div>
             </li>

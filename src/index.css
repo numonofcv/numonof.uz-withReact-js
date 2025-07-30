@@ -18,7 +18,7 @@ section{
   padding: 0 25px;
   margin: 0 auto;
 }
-button{
+.button{
  background-color: #0F172A;
   color: white;
   padding: 12px 25px;

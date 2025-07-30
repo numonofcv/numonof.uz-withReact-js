@@ -28,7 +28,7 @@ export default function About() {
             </span>
           )}
         </p>
-        <button className="read-more-btn" onClick={toggleText}>
+        <button className="button read-more-btn" onClick={toggleText}>
           {showMore ? 'Read Less' : 'Read More'}
         </button>
       </div>
