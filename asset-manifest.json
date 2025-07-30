@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.css": "/numonof.uz-withReact-js/static/css/main.37387441.css",
-    "main.js": "/numonof.uz-withReact-js/static/js/main.e1116adc.js",
+    "main.css": "/numonof.uz-withReact-js/static/css/main.c2e2b831.css",
+    "main.js": "/numonof.uz-withReact-js/static/js/main.211f3019.js",
     "static/media/hero.png": "/numonof.uz-withReact-js/static/media/hero.2646f76a9fa7f395eff4.png",
     "static/media/indicorp.png": "/numonof.uz-withReact-js/static/media/indicorp.5799d96cb36bc53d0402.png",
     "static/media/artificial.png": "/numonof.uz-withReact-js/static/media/artificial.34d8e9dcb5efd4c69ac0.png",
+    "static/media/bootstrap-icons.woff?": "/numonof.uz-withReact-js/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
     "static/media/ProductList.jpg": "/numonof.uz-withReact-js/static/media/ProductList.f69a2aefe582d06d4e59.jpg",
+    "static/media/bootstrap-icons.woff2?": "/numonof.uz-withReact-js/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "static/media/recipeLP.jpg": "/numonof.uz-withReact-js/static/media/recipeLP.d731912b5af42bc53460.jpg",
     "static/media/Screenshot_1.png": "/numonof.uz-withReact-js/static/media/Screenshot_1.b7b0f169b6c0cb0792c0.png",
     "static/media/Trafalgar.jpg": "/numonof.uz-withReact-js/static/media/Trafalgar.eb458cf8e6cef4963a89.jpg",
@@ -15,12 +17,20 @@
     "static/media/product-cart.jpg": "/numonof.uz-withReact-js/static/media/product-cart.2a6aa9763eaa1d66c967.jpg",
     "static/media/twitter_login.png": "/numonof.uz-withReact-js/static/media/twitter_login.b2cf24f2c773433ab4be.png",
     "static/media/four-card-future.jpg": "/numonof.uz-withReact-js/static/media/four-card-future.2a7323453ef939798cf3.jpg",
+    "static/media/Sass.svg": "/numonof.uz-withReact-js/static/media/Sass.d5126adb6f0209e8de43543e4fbe702b.svg",
+    "static/media/reacticon.svg": "/numonof.uz-withReact-js/static/media/reacticon.c0c8b7b587020030f1ec5905f6266a5b.svg",
+    "static/media/bootstrap.svg": "/numonof.uz-withReact-js/static/media/bootstrap.fb286a013b577b5eba30b06ed85e038f.svg",
+    "static/media/typscript.svg": "/numonof.uz-withReact-js/static/media/typscript.971c50055604623de58c7c178a3efda4.svg",
+    "static/media/javascript.svg": "/numonof.uz-withReact-js/static/media/javascript.f85b2a7d25591421007203799fa7ae0a.svg",
+    "static/media/Git.svg": "/numonof.uz-withReact-js/static/media/Git.19374650ab890350eea60151724336cb.svg",
+    "static/media/figma.svg": "/numonof.uz-withReact-js/static/media/figma.6e81dcad42f03f2c1a8f7614a857ea66.svg",
+    "static/media/html.svg": "/numonof.uz-withReact-js/static/media/html.e2222c4468d274e9642898de0e5f7795.svg",
     "index.html": "/numonof.uz-withReact-js/index.html",
-    "main.37387441.css.map": "/numonof.uz-withReact-js/static/css/main.37387441.css.map",
-    "main.e1116adc.js.map": "/numonof.uz-withReact-js/static/js/main.e1116adc.js.map"
+    "main.c2e2b831.css.map": "/numonof.uz-withReact-js/static/css/main.c2e2b831.css.map",
+    "main.211f3019.js.map": "/numonof.uz-withReact-js/static/js/main.211f3019.js.map"
   },
   "entrypoints": [
-    "static/css/main.37387441.css",
-    "static/js/main.e1116adc.js"
+    "static/css/main.c2e2b831.css",
+    "static/js/main.211f3019.js"
   ]
 }
