@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section{
+   display: flex;
+  align-items: center;
+  padding: 3rem 3.25rem;
+  
+}
+.container{
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+.hero__container {
+  width: 100%;
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+  background-color: white;
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);}
+
+.button-active{
+  color: #fff;
+  padding: 12px 25px;
+  border:1px solid #0F172A;
+  border-radius: 120px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.4s ease;
+  background-color: #0F172A;
+}
+.button-active:hover{
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.button{
+  border: 1px solid #0F172A;
+  color: #0F172A;
+  background-color: transparent;
+  padding: 12px 25px;
+  border-radius: 120px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.4s ease;
+}
+button:hover{
+  background-color: #0F172A;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.subtitle{
+   font-size: 1.1em;
+  color: #0F172A;
+  line-height: 1.6;
+  font-weight: normal;
+}
+.title{
+ font-size: 4.8rem;
+  color: #0F172A;
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+  span{
+    color: #0a9396;
+  }
+}
+.description{
+   font-size: 1.1em;
+  color: #0a9396;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+
+/* Asosiy holat (desktop) */
+/* Seni oldingi CSS ni shu yerga qo‘yamiz */
+
+/* Kichik ekranlar uchun (tablet, mobil) */
+@media (max-width: 768px) {
+  section{
+     padding: 25px; 
+  }
+  
+.container{
+  padding: 0;
+  margin: 0 auto;
+}
+.title{
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+}
+
+/* Juda kichik ekranlar uchun (mobil) */
+@media (max-width: 480px) {
+
+  .title {
+    font-size: 1.5em;
+  }
+
+  .description {
+    font-size: 0.9em;
+  }
+}

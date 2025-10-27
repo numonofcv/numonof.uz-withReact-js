@@ -1,0 +1,188 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 3.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0a9396;
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+
+    span {
+        color: #0f172a;
+    }
+
+    &:hover {
+        color: #0f172a;
+    }
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    li a {
+        color: #0a9396;
+        text-decoration: none;
+        font-size: 1.1em;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: #0f172a;
+        }
+    }
+}
+
+/* 🔘 Controls section (theme + language + menu) */
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: none;
+}
+
+/* ☀️🌙 Dark / Light toggle */
+.theme-icon {
+    border: 1px solid #0a9396;
+    border-radius: 50%;
+    padding: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-icon.light {
+    color: #0a9396;
+}
+
+.theme-icon.dark {
+    background-color: transparent;
+    color: #0a9396;
+    transform: rotate(-15deg);
+    &:hover {
+        transform: rotate(0deg);
+    }
+}
+.theme-icon:hover {
+    transform: rotate(15deg);
+}
+
+/* 🌐 Language select */
+.lang-select {
+    flex: 1;
+    border: 1px solid #0a9396;
+    background: transparent;
+    color: #0a9396;
+    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        border-color: #0f172a;
+    }
+}
+
+/* 🍔 Menu button (mobil uchun) */
+.menu-icon {
+     font-size: 1rem;
+    display: none;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 0.4s all;
+    color: #0a9396;
+}
+
+
+/* 🌑 Dark Mode body */
+.dark {
+    background-color: #0f172a;
+    color: #f1f5f9;
+
+    .navbar {
+        background-color: #0f172a;
+    }
+
+    .navbar-brand {
+        color: #38ef7d;
+
+        span {
+            color: #e0f2fe;
+        }
+    }
+
+    .navbar-links li a {
+        color: #38ef7d;
+
+        &:hover {
+            color: #e0f2fe;
+        }
+    }
+
+    .langSelect {
+        color: #38ef7d;
+        border-color: #38ef7d;
+    }
+
+    .themeToggle {
+        color: #38ef7d;
+    }
+
+    .menuBtn > span,
+    .menuBtn > span::before,
+    .menuBtn > span::after {
+        background-color: #38ef7d;
+    }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 55%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        padding: 2rem 1rem;
+        background: #0f172a;
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+
+        &.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+}

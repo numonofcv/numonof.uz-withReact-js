@@ -4,6 +4,14 @@
   /* min-height: 600px; */
   background-color: #f9f9f9;
 }
+.project__cntainer {
+ width: 100%;
+  padding: 2rem 3.25rem;
+  background-color: #fff; /* Agar fon bo‘sh bo‘lsa, oq fon */
+  border-radius: 8px; /* Biroz yumaloq burchak */
+  box-sizing: border-box;
+}
+
 
 /* === Project List === */
 .project__list {

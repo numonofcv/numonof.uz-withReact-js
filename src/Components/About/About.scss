@@ -1,13 +1,23 @@
-.about__container {
-  width: 100%;
-  padding: 5rem;
-  background-color: #fff; /* Agar fon bo‘sh bo‘lsa, oq fon */
-  border-radius: 8px; /* Biroz yumaloq burchak */
-  box-sizing: border-box;
-}
-/* Asosiy holat (desktop) */
-/* Seni oldingi CSS ni shu yerga qo‘yamiz */
 
+.about__media {
+  flex: 0 0 1;
+  width: 450px;
+  max-width: 700px;
+  height: 450px;
+  max-height: 700px;
+  border-radius: 50%;
+  overflow: hidden;
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+}
+.about__info {
+  flex: 0 0 55%;
+  padding-left: 40px;
+}
 /* Kichik ekranlar uchun (tablet, mobil) */
 @media (max-width: 768px) {
   .about {

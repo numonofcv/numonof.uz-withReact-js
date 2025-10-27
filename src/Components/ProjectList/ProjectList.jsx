@@ -1,4 +1,4 @@
-import "./ProjectList.css";
+import "./ProjectList.scss";
 import {
   mirage,
   crudTodo,
