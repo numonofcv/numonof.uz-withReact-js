@@ -40,13 +40,14 @@
 // Dark
 .dark{
 .faq-section {
-  background-color: var(--color-dark-bg-primary);
- 
+background: #284754; 
 
 /* === FAQ item === */
 .faq-item {
   // border: 1px solid var(--color-secondary);
-  background-color: var(  --color-dark-bg-primary);
+  
+background: #284754;
+background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%);
   box-shadow: var( --dark-shadow-default);
   transition: background-color 0.3s;
   cursor: pointer;

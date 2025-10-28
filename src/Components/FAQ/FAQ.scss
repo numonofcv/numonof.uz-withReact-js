@@ -40,18 +40,22 @@
 }
 .dark{
 .accordion-button {
-  background: var(--color-primary); 
+  
+background: #284754;
+background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%); 
   color: var(--color-white);        
   box-shadow: var( --light-shadow-default);
 }
 
 
 .accordion-answer-box {
-  background: var(--bg-acardion); 
+background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%);
   box-shadow: var(--dark-shadow-default);   
+  box-shadow: var( --light-shadow-default);
+
 }
 
 .accordion-answer {
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 }

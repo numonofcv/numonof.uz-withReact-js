@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Creative <span>Front-End</span> Developer",
+    "subtitle": "Hi, I'm Islom",
+    "description":"Building modern, interactive, and beautiful web apps",
+    "downloadBtn": "Download CV",
+    "contactBtn": "Contact Me"
+  }
+}

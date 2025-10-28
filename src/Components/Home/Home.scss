@@ -1,6 +1,6 @@
 /* === BEM: hero block === */
 .hero {
-  padding: 5rem ;
+  padding: 8rem 5rem ;
 }
 
 .hero__text {
@@ -44,7 +44,10 @@
 
 // Dark Mode Styles
 .dark {
-  .hero {
+background: #284754;
+.hero {
+background: #284754;
+background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%);
     color: var(--color-white); /* matn rangi */
     
     .social-btn {
