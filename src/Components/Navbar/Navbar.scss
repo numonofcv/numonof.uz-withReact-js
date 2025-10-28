@@ -10,17 +10,17 @@
 .navbar-brand {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #0a9396;
+    color: var(--color-secondary); /* #0a9396 */
     cursor: pointer;
     user-select: none;
     transition: all 0.3s ease;
 
     span {
-        color: #0f172a;
+        color: var(--color-primary); /* #0F172A */
     }
 
     &:hover {
-        color: #0f172a;
+        color: var(--color-primary); /* #0F172A */
     }
 }
 
@@ -33,14 +33,14 @@
     gap: 2rem;
 
     li a {
-        color: #0a9396;
+        color: var(--color-secondary); /* #0a9396 */
         text-decoration: none;
-        font-size: 1.1em;
+        font-size: var(--font-subtitle); /* 1.1em */
         font-weight: 500;
         transition: color 0.3s ease-in-out;
 
         &:hover {
-            color: #0f172a;
+            color: var(--color-primary); /* #0F172A */
         }
     }
 }
@@ -55,26 +55,28 @@
 
 /* ☀️🌙 Dark / Light toggle */
 .theme-icon {
-    border: 1px solid #0a9396;
+    border: 1px solid var(--color-secondary); /* #0a9396 */
     border-radius: 50%;
     padding: 0.4rem;
-    font-size: 1rem;
+    font-size: var(--font-subtitle); /* 1rem */
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 .theme-icon.light {
-    color: #0a9396;
+    color: var(--color-secondary); /* #0a9396 */
 }
 
 .theme-icon.dark {
     background-color: transparent;
-    color: #0a9396;
+    color: var(--color-secondary); /* #0a9396 */
     transform: rotate(-15deg);
+
     &:hover {
         transform: rotate(0deg);
     }
 }
+
 .theme-icon:hover {
     transform: rotate(15deg);
 }
@@ -82,9 +84,9 @@
 /* 🌐 Language select */
 .lang-select {
     flex: 1;
-    border: 1px solid #0a9396;
+    border: 1px solid var(--color-secondary); /* #0a9396 */
     background: transparent;
-    color: #0a9396;
+    color: var(--color-secondary); /* #0a9396 */
     border-radius: 6px;
     padding: 0.3rem 0.5rem;
     font-weight: 500;
@@ -92,13 +94,13 @@
     transition: all 0.2s ease;
 
     &:hover {
-        border-color: #0f172a;
+        border-color: var(--color-primary); /* #0F172A */
     }
 }
 
 /* 🍔 Menu button (mobil uchun) */
 .menu-icon {
-     font-size: 1rem;
+    font-size: var(--font-subtitle); /* 1rem */
     display: none;
     position: relative;
     cursor: pointer;
@@ -106,48 +108,56 @@
     outline: none;
     background-color: transparent;
     transition: 0.4s all;
-    color: #0a9396;
+    color: var(--color-secondary); /* #0a9396 */
 }
-
 
 /* 🌑 Dark Mode body */
 .dark {
-    background-color: #0f172a;
-    color: #f1f5f9;
+    background-color: var(--color-primary); /* #0F172A */
+    color: var(--color-white); /* #ffffff */
 
     .navbar {
-        background-color: #0f172a;
+        background-color: var(--color-primary); /* #0F172A */
     }
 
     .navbar-brand {
-        color: #38ef7d;
+        color: var(--color-secondary); /* #38ef7d yoki accent rang */
 
         span {
-            color: #e0f2fe;
+            color: #e0f2fe; /* mumkin: var(--color-white) */
         }
     }
 
     .navbar-links li a {
-        color: #38ef7d;
+        color: var(--color-secondary); /* #38ef7d */
 
         &:hover {
-            color: #e0f2fe;
+            color: #e0f2fe; /* var(--color-white) */
         }
     }
 
     .langSelect {
-        color: #38ef7d;
-        border-color: #38ef7d;
+        color: var(--color-secondary);
+        border-color: var(--color-secondary);
     }
+.theme-icon {
+    border: 1px solid var(--color-white); /* #0a9396 */
+    border-radius: 50%;
+    padding: 0.4rem;
+    font-size: var(--font-subtitle); /* 1rem */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-    .themeToggle {
-        color: #38ef7d;
-    }
+.theme-icon.light {
+    color: var(--color-white); /* #0a9396 */
+}
+
 
     .menuBtn > span,
     .menuBtn > span::before,
     .menuBtn > span::after {
-        background-color: #38ef7d;
+        background-color: var(--color-secondary);
     }
 }
 
@@ -166,7 +176,7 @@
         top: 80px;
         right: 0;
         padding: 2rem 1rem;
-        background: #0f172a;
+        background: var(--color-primary); /* #0F172A */
         border-radius: 8px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         opacity: 0;
@@ -185,4 +195,5 @@
     .navbar-brand {
         font-size: 1rem;
     }
+    
 }

@@ -4,11 +4,11 @@
 }
 
 .hero__text {
+  padding: 2rem 5rem;
   text-align: center;
 }
 
-
-
+/* Social buttons */
 .social {
   position: fixed;
   top: 50%;
@@ -16,46 +16,46 @@
   display: flex;
   flex-direction: column;
   z-index: 100;
-  background-color: none;
+  background-color: transparent;
 }
 .social-btn {
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        margin: 5px 0;
-        padding: 5px;
-        font-size: 20px;
-        color: #fff;
-        border-radius: 10%;
-        transition: all 0.3s;
-        background-color: #0a9396;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 20px;
+  color: var(--color-white); 
+  border-radius: 10%;
+  transition: all 0.3s;
+  background-color: var(--color-secondary); /* #0a9396 */
+
+  &:hover {
+    background-color: var(--color-primary); /* #0F172A */
+  }
+}
+
+/* === Responsive === */
+
+
+
+// Dark Mode Styles
+.dark {
+  .hero {
+    color: var(--color-white); /* matn rangi */
+    
+    .social-btn {
+      transition: all 0.5s;
+      color: var(--color-white);
+      background-color: var(--color-dark-bg-secondary); /* #0a9396 */
+
+      &:hover {
+      box-shadow: var(--light-shadow-default);
+        color: var(--color-dark-bg-primary); /* #0F172A */
+      }
     }
-    .social > .social-btn:hover{
-    background-color: #0F172A;
-    }
- 
-/* === Responsiv === */
-@media (max-width: 768px) {
-  .hero__container {
-    flex-direction: column;
-    text-align: center;
-    padding: 30px;
-  }
-
-  .hero__text {
-    padding-right: 0;
-    margin-bottom: 30px;
-  }
-
-  .hero__image {
-    width: 250px;
-    height: 250px;
-  }
-
-  .hero__text h1 {
-    font-size: 2em;
   }
 }

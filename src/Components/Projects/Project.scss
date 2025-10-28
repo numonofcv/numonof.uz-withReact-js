@@ -1,17 +1,14 @@
 /* === Project Section === */
-
 .project {
-  /* min-height: 600px; */
-  background-color: #f9f9f9;
+    background-color: var(--color-light-bg-secondary);
 }
-.project__cntainer {
- width: 100%;
+
+.project__container {
+  width: 100%;
   padding: 2rem 3.25rem;
-  background-color: #fff; /* Agar fon bo‘sh bo‘lsa, oq fon */
-  border-radius: 8px; /* Biroz yumaloq burchak */
+  border-radius: 8px;
   box-sizing: border-box;
 }
-
 
 /* === Project List === */
 .project__list {
@@ -24,18 +21,16 @@
 }
 
 /* === Project Card === */
-
 .project__card {
   width: 300px;
   height: auto;
-  background: #fff;
+  background: var(--color-white);
   border-radius: 10px;
   padding: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--dark-shadow-default);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   transition: all 0.3s ease;
-}
-
 .project__card-image-wrapper {
   width: 100%;
   height: 250px;
@@ -43,23 +38,25 @@
   overflow: hidden;
   display: block;
   border-radius: 10px;
-  transition: all 0.3 ease;
-
+  transition: all 0.3s ease;
 }
 
 .project__image {
   width: 100%;
   height: auto;
   object-fit: cover;
+  transition: transform 0.5s ease;
 }
 
-.project__card:hover {
-  transform: translateY(-5px);
+  &:hover {
+    transform: translateY(-5px);
+
+    .project__image {
+      transform: scale(1.1);
+    }
+  }
 }
 
-.project__card:hover .project__image {
-  transform: scale(1.1);
-}
 
 .project__details {
   padding: 20px;
@@ -69,7 +66,7 @@
 .project__card-title {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #222;
+  color: var(--color-primary);
 }
 
 .project__filters {
@@ -77,21 +74,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-}
 
-.project__filter-btn {
-  padding: 8px 16px;
-  border: 1px solid #0f172a;
-  color: #0F172A;
-  background-color: transparent;
-  cursor: pointer;
-  transition: 0.3s;
-}
+  .project__filter-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
 
-.project__filter-btn.active,
-.project__filter-btn:hover {
-  background-color: #0F172A;
-  color: #fff;
+    &.active,
+    &:hover {
+      background-color: var(--color-dark-bg-primary);
+      color: var(--color-white);
+    }
+  }
 }
 
 .project__empty {
@@ -99,61 +96,46 @@
   margin: 5rem auto;
   font-size: 5rem;
   text-align: center;
-  color: #0F172A;
+  color: var(--color-primary);
   opacity: 0.2;
   animation: fadeIn 0.8s ease forwards;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
+  from { opacity: 0; }
+  to { opacity: 0.2; }
+}
+.dark{
+  .project{
+    background-color: var(--color-dark-bg-primary);
+  }
+  .project__card {
+    background: var(--color-dark-bg-primary);
+    box-shadow: var(--dark-shadow-default);
   }
 
-  to {
-    opacity: 0.2;
+  .project__card-title {
+    color: var(--color-white);
+  }
+
+.project__filters {
+  .project__filter-btn {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &.active,
+    &:hover {
+      background-color: var(--color-dark-bg-secondary);
+      color: var(--color-white);
+    }
+  }
+}
+ .project__empty {
+    color: var(--color-white);
   }
 }
 
 /* === Responsive tweaks === */
-
-@media (max-width: 768px) {
-  .project__title {
-    font-size: 1.8rem;
-  }
-
-  .project__list {
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-
-  /* === Project Card === */
-
-  .project__card {
-    width: 300px;
-    height: auto;
-    background: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-
-
-  .project__card-title {
-    font-size: 1.3rem;
-  }
-
-  .project__empty {
-    font-size: 3rem;
-    width: 90%;
-  }
-}
-
-@media (max-width: 480px) {
-  .project__empty {
-    font-size: 2rem;
-    width: 95%;
-  }
-}

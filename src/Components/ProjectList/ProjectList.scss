@@ -1,5 +1,3 @@
-
-
 /* Loyihalar ro'yxati */
 .multi-section__list {
   display: flex;
@@ -17,17 +15,15 @@
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
-}
 
-@media (min-width: 768px) {
-  .multi-section__item {
+  @media (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
-  }
 
-  /* Hatto va toq elementlar uchun rasmlar joylashuvi */
-  .multi-section__item:nth-child(even) {
-    flex-direction: row-reverse;
+    /* Hatto va toq elementlar uchun rasmlar joylashuvi */
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
   }
 }
 
@@ -38,12 +34,12 @@
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
 
-.multi-section__image {
-  width: 100%;
-  height: auto;
-  display: block;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 /* Tafsilotlar qismi */
@@ -51,24 +47,40 @@
   flex: 1;
   max-width: 500px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: left;
+  }
+
+  .multi-section__item-title {
+    font-size: var(-font-title-tablet); /* 1.5rem */
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+  }
+
+  .multi-section__description {
+    font-size: 1rem; 
+    color: #475569; 
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+}
+.dark{
+/* Rasm qismi */
+.multi-section__img-wrapper {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-@media (min-width: 768px) {
-  .multi-section__details {
-    text-align: left;
+/* Tafsilotlar qismi */
+.multi-section__details {
+  .multi-section__item-title {
+    color: var(--color-white);
+  }
+
+  .multi-section__description {
+    color: var(--color-secondary);
   }
 }
 
-.multi-section__item-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #0f172a;
-}
-
-.multi-section__description {
-  font-size: 1rem;
-  color: #475569;
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
 }

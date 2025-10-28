@@ -1,52 +1,107 @@
 .contact {
     text-align: center;
-
     .contact__title {
         font-size: 2.5rem;
         margin-bottom: 1rem;
+        color: var(--color-primary); /* matn rangi */
     }
+
     .contact__description {
         font-size: 1.2rem;
         margin-bottom: 2rem;
+        color: var(--color-text-dark); /* matn rangi */
     }
+
     .content {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 2rem;
+
         .contact__form {
             display: flex;
             flex-direction: column;
             align-items: center;
             width: 100%;
+
             .contact__input,
             .contact__textarea {
                 width: 100%;
-                
                 padding: 0.75rem;
                 margin-bottom: 1rem;
-                border: 1px solid #ccc;
+                border: 1px solid #ccc; /* root bilan: var(--color-border-light) */
                 border-radius: 5px;
                 font-size: 1rem;
-                width: 100%;
                 box-sizing: border-box;
 
                 &:focus {
                     outline: none;
-                    border-color: #0a9396;
+                    border-color: var(--color-secondary); /* 0a9396 o‘rniga */
                 }
 
                 &::placeholder {
-                    color: #999;
+                    color: #999; /* root bilan: var(--color-text-muted) */
                 }
             }
+
             .contact__textarea {
                 height: 150px;
                 resize: vertical;
             }
+
             .button-active {
-    align-self: flex-end; // faqat tugma chapga chiqadi
+                align-self: flex-end; /* tugma chapga chiqadi */
+                background-color: var(--color-primary);
+                color: var(--color-white);
+                border-color: var(--color-primary);
+            }
+
+            .button-active:hover {
+                background-color: var(--color-secondary);
+                border-color: var(--color-secondary);
+                color: var(--color-white);
+            }
+        }
+    }
 }
+
+.dark {
+    .contact {
+        .content {
+            .contact__form {
+                .contact__input,
+                .contact__textarea {
+                    color: var(--color-white);
+                    border-color: var(--color-secondary); /* 0a9396 o‘rniga */
+                    background-color: var(--color-primary);
+                    box-shadow: var(--light-shadow-default);
+                    &:focus {
+                        outline: none;
+                        border-color: var(--color-secondary); /* 0a9396 o‘rniga */
+                    }
+
+                    &::placeholder {
+                        color: #999;
+                    }
+                }
+
+                .contact__textarea {
+                    height: 150px;
+                    resize: vertical;
+                }
+
+                .button-active {
+                    background-color: var(--color-primary);
+                    color: var(--color-white);
+                    border-color: var(--color-secondary);
+                }
+
+                .button-active:hover {
+                    background-color: var(--color-secondary);
+                    border-color: var(--color-secondary);
+                    color: var(--color-white);
+                }
+            }
         }
     }
 }

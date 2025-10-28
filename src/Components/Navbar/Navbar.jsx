@@ -13,17 +13,21 @@ export default function Navbar() {
   // 📱 Menu toggle
   const handleMenuClick = () => setMenuOpen(prev => !prev);
 
-  // 🔒 Scroll boshqarish
+  // 🔒 Scroll boshqarish (mobil menu ochilganda scrollni bloklaymiz)
   useEffect(() => {
     document.body.style.overflow = menuOpen ? 'hidden' : '';
   }, [menuOpen]);
 
   // 🌗 Dark mode qo‘llash
   useEffect(() => {
-    document.body.classList.toggle('dark-mode', darkMode);
+    if(darkMode){
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
   }, [darkMode]);
 
-  // 🌞/🌙 Dark-Light icon click
+  // 🌞/🌙 Dark-Light toggle
   const toggleTheme = () => setDarkMode(!darkMode);
 
   // 🌐 Tilni o‘zgartirish
@@ -46,7 +50,6 @@ export default function Navbar() {
 
       {/* 🔹 O'ng taraf boshqaruv elementlari */}
       <div className="navbar-controls">
-        {/* 🌗 Faqat iconlar bilan toggle */}
         {darkMode ? (
           <MdOutlineLightMode
             className="theme-icon light"

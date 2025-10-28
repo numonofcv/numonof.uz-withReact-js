@@ -10,7 +10,7 @@ return (
     <div className="hero__text">
       <h2 className='subtitle'>Hi, I'm Islom 👋</h2>
       <h1 className='title'>Creative <span>Front-End</span> Developer</h1>
-      <p className='description'>Building modern, interactive, and beautiful web apps</p>
+      <p className='subtitle'>Building modern, interactive, and beautiful web apps</p>
       <button className="button-active">Contact Me</button>
       <button className="button">View Projects</button>
       <div class="social">
