@@ -1,0 +1,199 @@
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 3.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-secondary); /* #0a9396 */
+    cursor: pointer;
+    user-select: none;
+    transition: all 0.3s ease;
+
+    span {
+        color: var(--color-primary); /* #0F172A */
+    }
+
+    &:hover {
+        color: var(--color-primary); /* #0F172A */
+    }
+}
+
+.navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    li a {
+        color: var(--color-secondary); /* #0a9396 */
+        text-decoration: none;
+        font-size: var(--font-subtitle); /* 1.1em */
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+            color: var(--color-primary); /* #0F172A */
+        }
+    }
+}
+
+/* 🔘 Controls section (theme + language + menu) */
+.navbar-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: none;
+}
+
+/* ☀️🌙 Dark / Light toggle */
+.theme-icon {
+    border: 1px solid var(--color-secondary); /* #0a9396 */
+    border-radius: 50%;
+    padding: 0.4rem;
+    font-size: var(--font-subtitle); /* 1rem */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-icon.light {
+    color: var(--color-secondary); /* #0a9396 */
+}
+
+.theme-icon.dark {
+    background-color: transparent;
+    color: var(--color-secondary); /* #0a9396 */
+    transform: rotate(-15deg);
+
+    &:hover {
+        transform: rotate(0deg);
+    }
+}
+
+.theme-icon:hover {
+    transform: rotate(15deg);
+}
+
+/* 🌐 Language select */
+.lang-select {
+    flex: 1;
+    border: 1px solid var(--color-secondary); /* #0a9396 */
+    background: transparent;
+    color: var(--color-secondary); /* #0a9396 */
+    border-radius: 6px;
+    padding: 0.3rem 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        border-color: var(--color-primary); /* #0F172A */
+    }
+}
+
+/* 🍔 Menu button (mobil uchun) */
+.menu-icon {
+    font-size: var(--font-subtitle); /* 1rem */
+    display: none;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: 0.4s all;
+    color: var(--color-secondary); /* #0a9396 */
+}
+
+/* 🌑 Dark Mode body */
+.dark {
+    background-color: var(--color-primary); /* #0F172A */
+    color: var(--color-white); /* #ffffff */
+
+    .navbar {
+        background-color: var(--color-primary); /* #0F172A */
+    }
+
+    .navbar-brand {
+        color: var(--color-secondary); /* #38ef7d yoki accent rang */
+
+        span {
+            color: #e0f2fe; /* mumkin: var(--color-white) */
+        }
+    }
+
+    .navbar-links li a {
+        color: var(--color-secondary); /* #38ef7d */
+
+        &:hover {
+            color: #e0f2fe; /* var(--color-white) */
+        }
+    }
+
+    .langSelect {
+        color: var(--color-secondary);
+        border-color: var(--color-secondary);
+    }
+.theme-icon {
+    border: 1px solid var(--color-white); /* #0a9396 */
+    border-radius: 50%;
+    padding: 0.4rem;
+    font-size: var(--font-subtitle); /* 1rem */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.theme-icon.light {
+    color: var(--color-white); /* #0a9396 */
+}
+
+
+    .menuBtn > span,
+    .menuBtn > span::before,
+    .menuBtn > span::after {
+        background-color: var(--color-secondary);
+    }
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 55%;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        padding: 2rem 1rem;
+        background: var(--color-primary); /* #0F172A */
+        border-radius: 8px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform: translateY(-20px);
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+        z-index: 999;
+
+        &.show {
+            opacity: 1;
+            transform: translateY(0);
+            pointer-events: auto;
+        }
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    
+}

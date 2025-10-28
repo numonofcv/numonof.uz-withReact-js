@@ -1,0 +1,61 @@
+/* === BEM: hero block === */
+.hero {
+  padding: 5rem ;
+}
+
+.hero__text {
+  padding: 2rem 5rem;
+  text-align: center;
+}
+
+/* Social buttons */
+.social {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+  background-color: transparent;
+}
+.social-btn {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 20px;
+  color: var(--color-white); 
+  border-radius: 10%;
+  transition: all 0.3s;
+  background-color: var(--color-secondary); /* #0a9396 */
+
+  &:hover {
+    background-color: var(--color-primary); /* #0F172A */
+  }
+}
+
+/* === Responsive === */
+
+
+
+// Dark Mode Styles
+.dark {
+  .hero {
+    color: var(--color-white); /* matn rangi */
+    
+    .social-btn {
+      transition: all 0.5s;
+      color: var(--color-white);
+      background-color: var(--color-dark-bg-secondary); /* #0a9396 */
+
+      &:hover {
+      box-shadow: var(--light-shadow-default);
+        color: var(--color-dark-bg-primary); /* #0F172A */
+      }
+    }
+  }
+}

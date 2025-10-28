@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './About.css';
+import './About.scss';
+import { heroImg, } from '../assets/images/images';
 
 export default function About() {
   const [showMore, setShowMore] = useState(false);
@@ -10,8 +11,12 @@ export default function About() {
 
   return (
     <section className='about'>
-      <div className="container about__container">
-        <h3 className="title">About</h3>
+      <div className="container hero__container">
+          <div className="about__media">
+      <img src={heroImg} alt="Islomjon No'monov" />
+    </div>
+    <div className="about__info">
+        <h3 className="title">About Me</h3>
         <p className="description">
           I’m Islomxon — a web developer specializing in creating modern, responsive, and user-friendly websites and web applications. With over 1.5 years of hands-on experience, I enjoy turning complex ideas into simple, clean, and beautiful solutions.
           <span className="dots">{!showMore && '...'}</span>
@@ -31,7 +36,9 @@ export default function About() {
         <button className="button read-more-btn" onClick={toggleText}>
           {showMore ? 'Read Less' : 'Read More'}
         </button>
+        </div>
       </div>
+
     </section>
   );
 }

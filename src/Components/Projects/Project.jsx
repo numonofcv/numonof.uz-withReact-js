@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Project.css';
+import './Project.scss';
 import { recipeLP, productList, fourCartFuture } from '../assets/images/images';
 
 const projectData = [
@@ -72,7 +72,7 @@ return (
                     </div>
                     <div className="project__details">
                         <h3 className="project__card-title">{project.title}</h3>
-                        <button className="button project__button">View Project</button>
+                        <button className="button project__button">View Live</button>
                     </div>
                 </div>
             </li>

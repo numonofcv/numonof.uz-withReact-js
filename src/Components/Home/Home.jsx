@@ -1,17 +1,18 @@
 import React from 'react';
-import '../../index.css';
-import './Home.css';
-import { heroImg, } from '../assets/images/images';
+import '../../index.scss';
+import './Home.scss';
 import { SiNetlify } from 'react-icons/si';
 
 export default function Home() {
 return (
 <section className="hero">
-  <div className="container hero__container">
+  <div className="container">
     <div className="hero__text">
-      <h1 className='title'>Hi, I'm Islom Numonov.<br /> Web Developer</h1>
-      <p className='description'>I build responsive websites and web applications.</p>
-      <button className="button">Read More</button>
+      <h2 className='subtitle'>Hi, I'm Islom 👋</h2>
+      <h1 className='title'>Creative <span>Front-End</span> Developer</h1>
+      <p className='subtitle'>Building modern, interactive, and beautiful web apps</p>
+      <button className="button-active">Contact Me</button>
+      <button className="button">View Projects</button>
       <div class="social">
         <a class="social-btn" href="https://github.com/numonof?tab=repositories">
           <i class="bi bi-github"></i>
@@ -24,9 +25,6 @@ return (
 
         </a>
       </div>
-    </div>
-    <div className="hero__image">
-      <img src={heroImg} alt="Alex Smith" />
     </div>
   </div>
 </section>

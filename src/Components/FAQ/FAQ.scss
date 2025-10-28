@@ -1,4 +1,3 @@
-
 .accordion-item-wrapper {
   display: flex;
   justify-content: space-between;
@@ -9,8 +8,9 @@
 .accordion-button {
   width: 60%;
   padding: 15px;
-  background: #1e293b;
-  color: white;
+  background: var(--color-primary); /* #1e293b o‘rniga */
+  color: var(--color-white);        /* white o‘rniga */
+  box-shadow: var( --dark-shadow-default);
   font-size: 1.3rem;
   text-align: left;
   cursor: pointer;
@@ -28,27 +28,30 @@
 
 .accordion-answer-box {
   width: 35%;
-  background: #e5e7eb;
+  background: var(--bg-acardion);
   padding: 15px;
   border-radius: 8px;
 }
 
 .accordion-answer {
-  color: #111827;
+  color: var(--color-primary); 
   font-size: 15px;
   margin: 0;
 }
-@media (max-width: 768px) {
-  .accordion-item-wrapper {
-    flex-direction: column;
-  }
+.dark{
+.accordion-button {
+  background: var(--color-primary); 
+  color: var(--color-white);        
+  box-shadow: var( --light-shadow-default);
+}
 
-  .accordion-button,
-  .accordion-answer-box {
-    width: 100%;
-  }
 
-  .accordion-button {
-    margin-bottom: 10px;
-  }
+.accordion-answer-box {
+  background: var(--bg-acardion); 
+  box-shadow: var(--dark-shadow-default);   
+}
+
+.accordion-answer {
+  color: var(--color-primary);
+}
 }

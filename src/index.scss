@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* =======================
+   Root variables
+======================= */
+:root {
+  /* Colors */
+  --color-primary: #0F172A;      /* Asosiy qora rang */
+  --color-secondary: #0a9396;      /* Accent rang (highlight) */
+  --color-white: #fff ;               /* Oq rang (white) */
+  --color-accent: #F9B487; /* Accent rang (highlight) */
+
+  /* BG color */
+  --color-dark-bg-primary: #0F172A;
+  --color-dark-bg-secondary: #0a9396;
+  --color-dark-bg-light: #fff;
+  --color-light-bg-secondary: #f9f9f9;
+  --bg-acardion:#e5e7eb;
+
+
+  /* Font sizes */
+  --font-base: 1em;
+  --font-subtitle: 1.1em;
+  --font-title-desktop: 4.8rem;
+  --font-title-tablet: 2em;
+  --font-title-mobile: 1.5em;
+
+  /* Spacing */
+  --spacing-section: 3rem;
+  --spacing-container: 25px;
+  --spacing-button-padding: 12px 25px;
+
+  /* Border radius */
+  --radius-button: 120px;
+
+  /* Shadows */
+  --light-shadow-default: 0 4px 15px rgba(255, 255, 255, 0.1);
+  --dark-shadow-default: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* =======================
+   Global Styles
+======================= */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  padding: 3rem 3.25rem;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+/* =======================
+   Hero Section
+======================= */
+.hero__container {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: var(--color-white);
+  padding: 5rem;
+  border-radius: 32px;
+  box-shadow: var(--dark-shadow-default);
+}
+
+/* =======================
+   Buttons
+======================= */
+.button-active {
+  color: var(--color-white);
+  padding: 12px 25px;
+  border: 1px solid var(--color-primary);
+  border-radius: 120px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.4s ease;
+  background-color: var(--color-primary);
+
+  &:hover {
+    box-shadow: var(--shadow-default);
+  }
+}
+
+.button {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+  padding: var(--spacing-button-padding);
+  border-radius: var(--radius-button);
+  font-size: var(--font-base);
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-default);
+  }
+}
+
+/* =======================
+   Text
+======================= */
+.subtitle {
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  line-height: 1.6;
+  font-weight: normal;
+}
+
+.title {
+  font-size: 4.8rem;
+  color: var(--color-primary);
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+
+  span {
+    color: var(--color-secondary);
+  }
+}
+.description {
+  font-size: 1.1rem;
+  color: var(--color-secondary);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* =======================
+   Responsive
+======================= */
+
+/* =======================
+   Dark Mode
+======================= */
+.dark { 
+  --shadow-default: 0 4px 15px rgba(255, 255, 255, 0.1);
+  body {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
+  .hero__container {
+    // border: 1px solid var(--color-secondary);
+    border-radius: 32px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--light-shadow-default);
+  }
+
+  .title {
+    color: var(--color-white);
+
+    span {
+      color: var(--color-secondary);
+    }
+  }
+
+  .subtitle {
+    color: var(--color-accent);
+  }
+.button-active {
+  color: var(--color-white);
+  border: 1px solid var(--color-secondary);
+  transition: all 0.4s ease;
+  background-color: var(--color-secondary);
+
+  &:hover {
+    box-shadow: var(--shadow-default);
+  }
+}
+.button {
+  border: 1px solid var(--color-secondary);
+  color: var(--color-white);
+  background-color: transparent;
+  transition: all 0.4s ease;
+
+  &:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-default);
+  } 
+}
+}

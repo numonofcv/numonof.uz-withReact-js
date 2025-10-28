@@ -1,0 +1,141 @@
+/* === Project Section === */
+.project {
+    background-color: var(--color-light-bg-secondary);
+}
+
+.project__container {
+  width: 100%;
+  padding: 2rem 3.25rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* === Project List === */
+.project__list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* === Project Card === */
+.project__card {
+  width: 300px;
+  height: auto;
+  background: var(--color-white);
+  border-radius: 10px;
+  padding: 20px;
+  overflow: hidden;
+  box-shadow: var(--dark-shadow-default);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  transition: all 0.3s ease;
+.project__card-image-wrapper {
+  width: 100%;
+  height: 250px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  display: block;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.project__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+  &:hover {
+    transform: translateY(-5px);
+
+    .project__image {
+      transform: scale(1.1);
+    }
+  }
+}
+
+
+.project__details {
+  padding: 20px;
+  text-align: center;
+}
+
+.project__card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--color-primary);
+}
+
+.project__filters {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .project__filter-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &.active,
+    &:hover {
+      background-color: var(--color-dark-bg-primary);
+      color: var(--color-white);
+    }
+  }
+}
+
+.project__empty {
+  width: 60%;
+  margin: 5rem auto;
+  font-size: 5rem;
+  text-align: center;
+  color: var(--color-primary);
+  opacity: 0.2;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.2; }
+}
+.dark{
+  .project{
+    background-color: var(--color-dark-bg-primary);
+  }
+  .project__card {
+    background: var(--color-dark-bg-primary);
+    box-shadow: var(--dark-shadow-default);
+  }
+
+  .project__card-title {
+    color: var(--color-white);
+  }
+
+.project__filters {
+  .project__filter-btn {
+    border: 1px solid var(--color-secondary);
+    color: var(--color-white);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &.active,
+    &:hover {
+      background-color: var(--color-dark-bg-secondary);
+      color: var(--color-white);
+    }
+  }
+}
+ .project__empty {
+    color: var(--color-white);
+  }
+}
+
+/* === Responsive tweaks === */
