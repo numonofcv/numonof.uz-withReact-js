@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/numonof.uz-withReact-js/static/css/main.c2e2b831.css",
-    "main.js": "/numonof.uz-withReact-js/static/js/main.211f3019.js",
+    "main.css": "/numonof.uz-withReact-js/static/css/main.ebbfd8a0.css",
+    "main.js": "/numonof.uz-withReact-js/static/js/main.9eba125b.js",
     "static/media/hero.png": "/numonof.uz-withReact-js/static/media/hero.2646f76a9fa7f395eff4.png",
     "static/media/indicorp.png": "/numonof.uz-withReact-js/static/media/indicorp.5799d96cb36bc53d0402.png",
     "static/media/artificial.png": "/numonof.uz-withReact-js/static/media/artificial.34d8e9dcb5efd4c69ac0.png",
@@ -26,11 +26,11 @@
     "static/media/figma.svg": "/numonof.uz-withReact-js/static/media/figma.6e81dcad42f03f2c1a8f7614a857ea66.svg",
     "static/media/html.svg": "/numonof.uz-withReact-js/static/media/html.e2222c4468d274e9642898de0e5f7795.svg",
     "index.html": "/numonof.uz-withReact-js/index.html",
-    "main.c2e2b831.css.map": "/numonof.uz-withReact-js/static/css/main.c2e2b831.css.map",
-    "main.211f3019.js.map": "/numonof.uz-withReact-js/static/js/main.211f3019.js.map"
+    "main.ebbfd8a0.css.map": "/numonof.uz-withReact-js/static/css/main.ebbfd8a0.css.map",
+    "main.9eba125b.js.map": "/numonof.uz-withReact-js/static/js/main.9eba125b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2e2b831.css",
-    "static/js/main.211f3019.js"
+    "static/css/main.ebbfd8a0.css",
+    "static/js/main.9eba125b.js"
   ]
 }
