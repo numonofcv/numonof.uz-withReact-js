@@ -1,0 +1,15 @@
+{
+  "navbar": {
+    "home": "Uy",
+    "about": "Men Haqimda",
+    "projects": "Loihalar",
+    "contact": "Aloqa"
+  },
+  "hero": {
+    "title": "Kreativ <span>Front-end</span> Dasturchi",
+    "subtitle": "Salom, men Numonofman",
+    "description":"Zamonaviy, interaktiv va chiroyli veb-ilovalar yaratish",
+    "downloadBtn": "Yuklash CV",
+    "contactBtn": "Loihalarni ko'rish"
+  }
+}

@@ -31,6 +31,7 @@
   box-shadow: var(--dark-shadow-default);
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   transition: all 0.3s ease;
+  z-index: 1;
 .project__card-image-wrapper {
   width: 100%;
   height: 250px;
@@ -107,10 +108,10 @@
 }
 .dark{
   .project{
-    background-color: var(--color-dark-bg-primary);
+    background: #284754;
   }
   .project__card {
-    background: var(--color-dark-bg-primary);
+background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%);
     box-shadow: var(--dark-shadow-default);
   }
 

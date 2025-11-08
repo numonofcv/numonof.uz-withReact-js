@@ -67,13 +67,15 @@
 
 .dark {
     .contact {
+        background: #284754;
         .content {
             .contact__form {
                 .contact__input,
                 .contact__textarea {
                     color: var(--color-white);
-                    border-color: var(--color-secondary); /* 0a9396 o‘rniga */
-                    background-color: var(--color-primary);
+        background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%);
+
+                    border-color: var(--color-secondary); 
                     box-shadow: var(--light-shadow-default);
                     &:focus {
                         outline: none;
@@ -91,7 +93,7 @@
                 }
 
                 .button-active {
-                    background-color: var(--color-primary);
+                    background-color: var(--color-secondary);
                     color: var(--color-white);
                     border-color: var(--color-secondary);
                 }

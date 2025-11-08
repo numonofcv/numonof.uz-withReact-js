@@ -2,31 +2,60 @@ import React from 'react';
 import '../../index.scss';
 import './Home.scss';
 import { SiNetlify } from 'react-icons/si';
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
-return (
-<section className="hero">
-  <div className="container">
-    <div className="hero__text">
-      <h2 className='subtitle'>Hi, I'm Islom 👋</h2>
-      <h1 className='title'>Creative <span>Front-End</span> Developer</h1>
-      <p className='subtitle'>Building modern, interactive, and beautiful web apps</p>
-      <button className="button-active">Contact Me</button>
-      <button className="button">View Projects</button>
-      <div class="social">
-        <a class="social-btn" href="https://github.com/numonof?tab=repositories">
-          <i class="bi bi-github"></i>
-        </a>
-        <a class="social-btn" href="https://app.netlify.com/teams/numonof/sites">
-          <SiNetlify size={30} />
-        </a>
-        <a class="social-btn" href="https://www.linkedin.com/in/islomjon-no-monov-2a49a420a/">
-          <i class="bi bi-linkedin"></i>
+  const { t } = useTranslation();
 
-        </a>
+  return (
+    <section className="hero">
+      <div className="container">
+        <div className="hero__text">
+          {/* Tarjima qilingan matnlar */}
+          <h2 className='subtitle'>{t("hero.subtitle")} 👋</h2>
+          
+          {/* Agar matnda HTML teglar bo‘lsa (masalan <span>) dangerouslySetInnerHTML ishlatamiz */}
+          <h1 
+            className='title'
+            dangerouslySetInnerHTML={{ __html: t("hero.title") }}
+          />
+          
+          <p className='subtitle'>{t("hero.description")}</p>
+          
+          <div className="buttons">
+            <button className="button-active">{t("hero.contactBtn")}</button>
+            <button className="button">{t("hero.downloadBtn")}</button>
+          </div>
+
+          {/* 🔗 Ijtimoiy tarmoqlar */}
+          <div className="social">
+            <a
+              className="social-btn"
+              href="https://github.com/numonof?tab=repositories"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="bi bi-github"></i>
+            </a>
+            <a
+              className="social-btn"
+              href="https://app.netlify.com/teams/numonof/sites"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiNetlify size={30} />
+            </a>
+            <a
+              className="social-btn"
+              href="https://www.linkedin.com/in/islomjon-no-monov-2a49a420a/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <i className="bi bi-linkedin"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-);
+    </section>
+  );
 }

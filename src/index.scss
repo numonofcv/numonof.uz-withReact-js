@@ -84,7 +84,7 @@ section {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: var(--color-white);
+  background: var(--color-white);
   padding: 5rem;
   border-radius: 32px;
   box-shadow: var(--dark-shadow-default);
@@ -166,14 +166,16 @@ section {
 .dark { 
   --shadow-default: 0 4px 15px rgba(255, 255, 255, 0.1);
   body {
-    background-color: var(--color-primary);
+    background: #0a4861;
+background: linear-gradient(90deg,rgba(10, 72, 97, 1) 0%, rgba(53, 94, 63, 1) 50%, rgba(10, 72, 97, 1) 100%);
     color: var(--color-white);
   }
 
   .hero__container {
     // border: 1px solid var(--color-secondary);
     border-radius: 32px;
-    background-color: var(--color-primary);
+background: #284754;
+background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%);
     color: var(--color-white);
     box-shadow: var(--light-shadow-default);
   }

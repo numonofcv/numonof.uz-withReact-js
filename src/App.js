@@ -1,6 +1,7 @@
 import "./App.scss";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import MainPage from "./Components/MainPage/MainPage";
+import "./i18"
 function App() {
   return (
     <div className="App">
