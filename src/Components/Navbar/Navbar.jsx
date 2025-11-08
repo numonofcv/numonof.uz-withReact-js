@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav className="navbar">
       {/* 🔹 Brend nomi */}
       <div className="navbar-brand">
-        Islom.<span>dev</span>
+        Numonof<span>.uz</span>
       </div>
 
       {/* 🔹 Sahifa linklari */}
