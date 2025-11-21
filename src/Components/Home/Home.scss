@@ -1,6 +1,6 @@
 /* === BEM: hero block === */
 .hero {
-  padding: 8rem 5rem ;
+  padding: 8rem 5rem;
 }
 
 .hero__text {
@@ -28,7 +28,7 @@
   margin: 5px 0;
   padding: 5px;
   font-size: 20px;
-  color: var(--color-white); 
+  color: var(--color-white);
   border-radius: 10%;
   transition: all 0.3s;
   background-color: var(--color-secondary); /* #0a9396 */
@@ -39,24 +39,129 @@
 }
 
 /* === Responsive === */
+@media (max-width: 1200px) {
+  .hero {
+    padding: 6rem 3rem;
+  }
 
+  .hero__text {
+    padding: 1.5rem 3rem;
+  }
+}
 
+@media (max-width: 992px) {
+  .hero {
+    padding: 5rem 2rem;
+  }
+
+  .hero__text {
+    padding: 1.5rem 2rem;
+  }
+
+  .social {
+    right: 15px;
+  }
+
+  .social-btn {
+    width: 22px;
+    height: 22px;
+    font-size: 18px;
+    margin: 4px 0;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+
+  .hero__text {
+    padding: 1rem 1.5rem;
+  }
+
+  .social {
+    right: 10px;
+    top: 45%;
+  }
+
+  .social-btn {
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    margin: 3px 0;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .hero__text {
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .social {
+    right: 8px;
+    top: 40%;
+  }
+
+  .social-btn {
+    width: 18px;
+    height: 18px;
+    font-size: 14px;
+    margin: 2px 0;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 2rem 0.75rem;
+  }
+
+  .hero__text {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .social {
+    right: 5px;
+    top: 35%;
+  }
+
+  .social-btn {
+    width: 16px;
+    height: 16px;
+    font-size: 12px;
+    margin: 2px 0;
+    padding: 2px;
+  }
+}
 
 // Dark Mode Styles
 .dark {
-background: #284754;
-.hero {
-background: #284754;
-background: linear-gradient(90deg, rgba(40, 71, 84, 1) 0%, rgba(30, 66, 43, 1) 50%, rgba(40, 71, 84, 1) 100%);
+  background: #284754;
+  .hero {
+    background: #284754;
+    background: linear-gradient(
+      90deg,
+      rgba(40, 71, 84, 1) 0%,
+      rgba(30, 66, 43, 1) 50%,
+      rgba(40, 71, 84, 1) 100%
+    );
     color: var(--color-white); /* matn rangi */
-    
+
     .social-btn {
       transition: all 0.5s;
       color: var(--color-white);
       background-color: var(--color-dark-bg-secondary); /* #0a9396 */
 
       &:hover {
-      box-shadow: var(--light-shadow-default);
+        box-shadow: var(--light-shadow-default);
         color: var(--color-dark-bg-primary); /* #0F172A */
       }
     }

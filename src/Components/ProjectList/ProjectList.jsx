@@ -4,7 +4,7 @@ import {
   crudTodo,
   indicorp,
   slider,
-} from "../assets/images/images";
+} from "../assets/images/images.jsx";
 
 export default function ProjectList() {
   return (

@@ -1,0 +1,75 @@
+[
+    {
+        "name": "acardionInReactJS",
+        "src": "./images/acardionInReactJS.png",
+        "title": "Accordion in React JS",
+        "category": "ReactJs"
+    },
+    {
+        "name": "akademnashr",
+        "src": "./images/akademnashr.png",
+        "title": "Akademnashr Landing Page",
+        "category": "Html/CSS"
+    },
+    {
+        "name": "artificial",
+        "src": "./images/artificial.png",
+        "title": "Artificial Intelligence Blog",
+        "category": "Html/CSS"
+    },
+    {"name": "clerksy", "src": "./images/clerksy.jpg", "title": "Clerksy Business Website", "category": "Html/CSS"},
+    {"name": "CRUDComponet", "src": "./images/CRUDComponet.png", "title": "CRUD Component App", "category": "ReactJs"},
+    {"name": "crudTodos", "src": "./images/crudTodos.png", "title": "CRUD Todo List", "category": "JavaScript"},
+    {"name": "current-box", "src": "./images/current-box.png", "title": "Current Box UI", "category": "Bootstrap"},
+    {"name": "designo", "src": "./images/designo.png", "title": "Designo Agency Website", "category": "Html/CSS"},
+    {
+        "name": "four-card-future",
+        "src": "./images/four-card-future.jpg",
+        "title": "Four Card Feature Section",
+        "category": "Html/CSS"
+    },
+    {"name": "indicorp", "src": "./images/indicorp.png", "title": "Indicorp Business Site", "category": "Bootstrap"},
+    {"name": "mirage", "src": "./images/mirage.jpg", "title": "Mirage Company Page", "category": "Html/CSS"},
+    {
+        "name": "Namanganliklar",
+        "src": "./images/Namanganliklar.png",
+        "title": "Namanganliklar Newspaper",
+        "category": "Html/CSS"
+    },
+    {
+        "name": "product-cart",
+        "src": "./images/product-cart.jpg",
+        "title": "Product Cart Page",
+        "category": "JavaScript"
+    },
+    {"name": "ProductList", "src": "./images/ProductList.jpg", "title": "Product List App", "category": "ReactJs"},
+    {"name": "QRComponent", "src": "./images/QRComponent.png", "title": "QR Component App", "category": "JavaScript"},
+    {"name": "ReactForm", "src": "./images/ReactForm.png", "title": "React Form Validation", "category": "ReactJs"},
+    {
+        "name": "reactProfileCard",
+        "src": "./images/reactProfileCard.png",
+        "title": "React Profile Card",
+        "category": "ReactJs"
+    },
+    {"name": "recipeLP", "src": "./images/recipeLP.jpg", "title": "Recipe Landing Page", "category": "Html/CSS"},
+    {"name": "slider", "src": "./images/Screenshot_1.png", "title": "Image Slider", "category": "ReactJs"},
+    {
+        "name": "SocialProfile",
+        "src": "./images/SocialProfile.png",
+        "title": "Social Profile Card",
+        "category": "ReactJs"
+    },
+    {"name": "todo", "src": "./images/todo.png", "title": "Todo App", "category": "ReactJs"},
+    {
+        "name": "Trafalgar",
+        "src": "./images/Trafalgar.jpg",
+        "title": "Trafalgar Healthcare Site",
+        "category": "Html/CSS"
+    },
+    {
+        "name": "twitter_login",
+        "src": "./images/twitter_login.png",
+        "title": "Twitter Login Page",
+        "category": "Html/CSS"
+    }
+]

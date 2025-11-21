@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './About.scss';
-import { heroImg, } from '../assets/images/images';
+import { heroImg, } from '../assets/images/images.jsx';
 
 export default function About() {
   const [showMore, setShowMore] = useState(false);
